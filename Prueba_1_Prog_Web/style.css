@@ -3,6 +3,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+#head1{
+    background-color: #333333;
+}
+#prodhover:hover{
+    background-color: #4d4d4d;
+}
+
 #head2{
     background-color: #083c54;
 }
@@ -13,3 +20,37 @@
 #imagenessec{
     background-color: #d4e5fe;
 }
+/* #################################### GOOGLE FONTS */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+#linea {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    color: #333333;
+}
+.linea {
+    margin:5px;
+    width:86%;    
+    border-top:1px solid #999;
+    position: relative;
+    top:10px;
+    float:left;
+}
+.leyenda {
+    font-weight:bold;
+    float:left;
+    color: black;
+   }
+
+.ms-1 {
+    margin-left: (spacer * .50) ;
+  }
+

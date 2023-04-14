@@ -8,19 +8,65 @@
     <!-- BOOTSTRAP & CSS LINK -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- GOOGLE FONTS -->
+    <!-- GOOGLE FONTS & FONT AWESOME -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- icono pestaña -->
     <link rel="icon" href="img\logoeiconos\logo_paris_v2.svg">
 </head>
 <body>
-    <header class="d-flex bg-dark">
-        <div class="p-1 d-inline justify-content-left">
+    <header class="d-flex" id="head1">
+        <div class="d-flex justify-content-left">
+          <div class="ms-5 justify-content-center w-50" id="prodhover">
+            <h6 class="fw-bold">Puntos cencosud</h6>
+          </div>
+          <div class="ms-5" id="prodhover">
             <img src="img\logoeiconos\easy.svg" alt="">
+          </div>
+          <div class="ms-5" id="prodhover">
             <img src="img\logoeiconos\jumbo.svg" alt="">
+          </div>
+          <div class="ms-5" id="prodhover">
             <img src="img\logoeiconos\santa-isabel.svg" alt="">
+          </div>
+          <div class="ms-5" id="prodhover">
+            <img src="img/logoeiconos/spid.svg" alt="">
+          </div>
+        </div>
+        <div class="justify-content-right d-flex ms-5">
+          <div class="dropdown">
+            <h6 class="fw-bold dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cencosud Scotiabank</h6>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <h6 class="fw-bold dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cencosud Scotiabank</h6>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <h6 class="fw-bold dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cencosud Scotiabank</h6>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
         </div>
       </header>
       <!-- NAVBAR -->
@@ -31,29 +77,29 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <div  >
-                
-            </div>
             <ul class="navbar-nav">
-              <li>
-                  <h5 class="text-white">Categorias</h5>
-              </li>
-              <li>
-                  <h1>|</h1>
+              <li class="nav-item">
+                  <div class="d-flex">
+                    <img src="img/logoeiconos/location.svg" class="ms-3" alt="">
+                    <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Categorias</a>
+                  </div>
               </li>
               <li class="nav-item">
-                <div class="d-block">
-                  <a class="nav-link active text-white" aria-current="page" href="#">Ingresa tu<br><span>región y comuna</span></a>
+                  <h1 class="ms-3">|</h1>
+              </li>
+              <li class="nav-item">
+                <div class="d-flex">
+                  <img src="img/logoeiconos/location.svg" class="ms-3" alt="">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Ingresa tu<br><span class="fw-bold">región y comuna</span></a>
                 </div>
-                </li>
-
+              </li>
             </ul>
             <div class="container-fluid w-50">
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -63,14 +109,17 @@
             <img src="img\huincha_voladora_despacho_app_29dic22.webp" class="img-fluid" alt="huincha">
         </div>
       </header>
-
-      <section>
-          <div class="container-lg">
+      <!-- CARROUSEL -->
+      <section class="container-fluid">
+          <div class="justify-content-center w-100">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -103,12 +152,11 @@
               </div>
           </div>
       </section>
-      <!-- PULICIDAD -->
+      <!-- PUBLICIDAD -->
       <section>
           <div class="container justify-content-center p-2 mb-1">
             <img src="img\img_link\img1.webp" class="img-fluid w-100" alt="publicidad" height="30%">
           </div>
-          
       </section>
       <!-- 3 imagenes -->
       <section id="imagenessec" heigth="50vh">
@@ -142,13 +190,278 @@
               </div>
           </div>
       </section>
+
       <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="container">
-            <h1 class="text-dark">Novedades</h1>
+            <div style="width:100%;margin:auto;">
+              <div class="leyenda"><h3> Novedades </h3> </div>
+              <div class="linea">&nbsp;</div>
+              </div>
           </div>
+        </div>
       </section>
 
+      <section class="container">
+        <div class="container justify-content-center p-2 mb-1">
+          <img src="img/img1.webp" class="img-fluid w-100" alt="publicidad" height="30%">
+        </div>
+        <!--  -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <div class="">
+                    <img src="img/div3_novedades/carrucel1/img1.webp" alt="" width="600px" height="400px">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="">
+                    <img src="img/div3_novedades/carrucel1/img2.webp" alt="" width="300px" height="400px">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="">
+                    <img src="img/div3_novedades/carrucel1/img3.webp" alt="" width="300px" height="400px">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <div class="">
+                    <img src="img/div3_novedades/carrucel1/img4.webp" alt="" width="600px" height="400px">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="">
+                    <img src="img/div3_novedades/carrucel1/img5.webp" alt="" width="300px" height="400px">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="">
+                    <img src="img/div3_novedades/carrucel1/img6.webp" alt="" width="300px" height="400px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="container">
+            <div class="w-100 p-1" style="margin:auto;">
+              <div class="leyenda"><h3> Outlet </h3>   </div>
+              <div class="linea">&nbsp;</div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUTLET -->
+      <!--4 imgagenes-->
+      <section>
+        <div class="container p-4">z
+            <div class="d-inline ">
+              <img src="img/div4_oulet/img1.jpg" alt="" width="300px" height="300px">
+              <img src="img/div4_oulet/img2.jpg" alt="" width="300px" height="300px">
+              <img src="img/div4_oulet/img3.jpg" alt="" width="660px" height="300px">
+            </div>
+            <div class="d-inline ">
+              
+              <img src="img/div4_oulet/img3.jpg" alt="" width="660px" height="300px">
+              <img src="img/div4_oulet/img1.jpg" alt="" width="300px" height="300px">
+              <img src="img/div4_oulet/img2.jpg" alt="" width="300px" height="300px">
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+          <div class="w-100 p-1" style="margin:auto;">
+            <div class="leyenda"><h3>Lo que buscas, en Paris está</h3>   </div>
+            <div class="linea">&nbsp;</div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container justify-content-center p-2 mb-1">
+        <img src="img/div5_loquebuscas/img1.webp" class="img-fluid w-100" alt="publicidad" height="30%">
+      </div>
+    </section>
+
+    <section class="p-3 mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="">
+              <img src="img/div5_loquebuscas/img2.webp" alt="" width="600px" height="400px">
+            </div>
+          </div>
+          <div class="col">
+            <div class="">
+              <img src="img/div5_loquebuscas/img3.webp" alt="" width="300px" height="400px">
+            </div>
+          </div>
+          <div class="col">
+            <div class="">
+              <img src="img/div5_loquebuscas/img3.webp" alt="" width="300px" height="400px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-100 d-flex p-1"  style="height: 5vh; background-color: #f2f2f2;">
+    </section>
+
+    <!--  -->
+    <section>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+          <div class="w-100 p-1" style="margin:auto;">
+            <div class="leyenda"><h3>Vestuario</h3>   </div>
+            <div class="linea">&nbsp;</div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5 mb-4">
+      <div class="d-inline ">
+            <img src="img/div6_adelantalamoda/img1.jpg" alt="" width="660px" height="300px">
+            <img src="img/div6_adelantalamoda/img2.jpg" alt="" width="300px" height="300px">
+            <img src="img/div6_adelantalamoda/img3.jpg" alt="" width="300px" height="300px">
+          </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+          <div class="w-100 p-1" style="margin:auto;">
+            <div class="leyenda"><h3>Por un mundo mejor</h3>   </div>
+            <div class="linea">&nbsp;</div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container p-4">
+          <div class="d-inline">
+            <img src="img/div7_porunmundo/img1.webp" alt="" width="300px" height="300px">
+            <img src="img/div7_porunmundo/img2.webp" alt="" width="300px" height="300px">
+            <img src="img/div7_porunmundo/img3.webp" alt="" width="300px" height="300px">
+            <img src="img/div7_porunmundo/img4.webp" alt="" width="300px" height="300px">
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="container">
+        <div class="w-100 p-1" style="margin:auto;">
+          <div class="leyenda"><h3>Marcas destacadas</h3>   </div>
+          <div class="linea">&nbsp;</div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container">
+    <!--  -->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col">
+              <div class="">
+                <img src="img/div7_porunmundo/img1.webp" alt="" width="300px" height="300px">
+              </div>
+            </div>
+            <div class="col">
+              <div class="">
+                <img src="img/div7_porunmundo/img1.webp" alt="" width="300px" height="300px">
+              </div>
+            </div>
+            <div class="col">
+              <div class="">
+                <img src="img/div7_porunmundo/img1.webp" alt="" width="300px" height="300px">
+              </div>
+            </div>
+            <div class="col">
+              <div class="">
+                <img src="img/div7_porunmundo/img1.webp" alt="" width="300px" height="300px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <div class="">
+                <img src="img/div3_novedades/carrucel1/img4.webp" alt="" width="600px" height="400px">
+              </div>
+            </div>
+            <div class="col">
+              <div class="">
+                <img src="img/div3_novedades/carrucel1/img5.webp" alt="" width="300px" height="400px">
+              </div>
+            </div>
+            <div class="col">
+              <div class="">
+                <img src="img/div3_novedades/carrucel1/img6.webp" alt="" width="300px" height="400px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- JS -->
-    <script src="js\bootstrap.min.js.map"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
